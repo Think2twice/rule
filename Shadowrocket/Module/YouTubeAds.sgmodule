@@ -12,9 +12,9 @@
 #^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/impression - reject
 #^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/browse - reject
 #^https?:\/\/(www|s)\.youtube\.com\/(get_midroll_) - reject
-^https?:\/\/www\.youtube\.com\/get_midroll_info\? - reject
-^https?:\/\/www\.googleadservices\.com\/pagead\/aclk\? - reject
-^https?:\/\/googleads\.g\.doubleclick\.net\/pagead\/ads\? - reject
+#^https?:\/\/www\.youtube\.com\/get_midroll_info\? - reject
+#^https?:\/\/www\.googleadservices\.com\/pagead\/aclk\? - reject
+#^https?:\/\/googleads\.g\.doubleclick\.net\/pagead\/ads\? - reject
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,www.googleadservices.com,googleads.g.doubleclick.net
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,
